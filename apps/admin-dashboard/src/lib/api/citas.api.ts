@@ -15,7 +15,7 @@ export const citasApi = {
      * Crear una Cita de tipo Consulta
      */
     crearConsulta: async (data: Consulta): Promise<Consulta> => {
-        return apiFetch<Consulta>(\`\${BASE_PATH}/consulta\`, {
+        return apiFetch<Consulta>(`${BASE_PATH}/consulta`, {
             method: 'POST',
             body: JSON.stringify(data)
         });
@@ -25,7 +25,7 @@ export const citasApi = {
      * Crear una Cita de tipo Cirugía
      */
     crearCirugia: async (data: Cirugia): Promise<Cirugia> => {
-        return apiFetch<Cirugia>(\`\${BASE_PATH}/cirugia\`, {
+        return apiFetch<Cirugia>(`${BASE_PATH}/cirugia`, {
             method: 'POST',
             body: JSON.stringify(data)
         });
@@ -35,7 +35,7 @@ export const citasApi = {
      * Crear una Cita de tipo Diagnóstico
      */
     crearDiagnostico: async (data: Diagnostico): Promise<Diagnostico> => {
-        return apiFetch<Diagnostico>(\`\${BASE_PATH}/diagnostico\`, {
+        return apiFetch<Diagnostico>(`${BASE_PATH}/diagnostico`, {
             method: 'POST',
             body: JSON.stringify(data)
         });

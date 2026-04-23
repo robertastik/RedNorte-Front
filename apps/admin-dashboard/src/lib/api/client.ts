@@ -13,7 +13,7 @@ export class ApiError extends Error {
  * Maneja tokens JWT de autorización, configuración CORS y parseo de errores.
  */
 export async function apiFetch<T>(endpoint: string, options: RequestInit = {}): Promise<T> {
-    const url = \`\${API_BASE_URL}\${endpoint}\`;
+    const url = `${API_BASE_URL}${endpoint}`;
     
     // Obtener JWT del localStorage (si estamos en navegador) o store global
     let token = '';
@@ -27,7 +27,7 @@ export async function apiFetch<T>(endpoint: string, options: RequestInit = {}): 
     };
 
     if (token) {
-        headers['Authorization'] = \`Bearer \${token}\`;
+        headers['Authorization'] = `Bearer ${token}`;
     }
 
     const response = await fetch(url, {
