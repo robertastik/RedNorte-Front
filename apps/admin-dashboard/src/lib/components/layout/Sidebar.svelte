@@ -25,9 +25,8 @@
         <ul class="space-y-1 px-3">
             <li>
                 <a 
-                    // eslint-disable-next-line svelte/no-navigation-without-resolve
-                    href="/dashboard"
-                    class="flex items-center px-3 py-2 text-sm font-medium rounded-md {page.url.pathname === '/dashboard' ? 'bg-slate-100 text-slate-900' : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'}"
+                    href="/"
+                    class="flex items-center px-3 py-2 text-sm font-medium rounded-md {page.url.pathname === '/' ? 'bg-slate-100 text-slate-900' : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'}"
                 >
                     Dashboard General
                 </a>
